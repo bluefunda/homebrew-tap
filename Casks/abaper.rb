@@ -13,22 +13,22 @@ cask "abaper" do
   on_macos do
     on_intel do
       url "https://github.com/bluefunda/abaper/releases/download/v0.0.1/abaper_0.0.1_Darwin_x86_64.tar.gz"
-      sha256 "2af55a22bf667f711d257e019cb9f57105733b33df4f5a8e7c3fc94d4ecf0f8a"
+      sha256 "190a2100a435d38c485281d1f8f10dd294c1472358300eed04c5ecba9ef75bbc"
     end
     on_arm do
       url "https://github.com/bluefunda/abaper/releases/download/v0.0.1/abaper_0.0.1_Darwin_arm64.tar.gz"
-      sha256 "9059cd5633719d62ec71550816f70c1f5ede3d1d605e077fb88048c2e02eb4f6"
+      sha256 "406da5e27ffc37d27964b94687a088c613c8eee65d1477582f5e89dda89c84de"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/bluefunda/abaper/releases/download/v0.0.1/abaper_0.0.1_Linux_x86_64.tar.gz"
-      sha256 "b7b7c24a7228a628b0088ccbfe66c590167b2dadfa3702d604be3d462dcedaaf"
+      sha256 "a0128539a6a9a7e1892d43be3b471905a6519d8f76fb667a82817aeadc81c669"
     end
     on_arm do
       url "https://github.com/bluefunda/abaper/releases/download/v0.0.1/abaper_0.0.1_Linux_arm64.tar.gz"
-      sha256 "7ecb3ff8125b53a1d996ae435ae9f695eae636d3fb5e0807f86e701d52df2482"
+      sha256 "53c80e9b6ec1316e6b6d0bce15c6c282bda0d340db1d771af4aa139c001c85c6"
     end
   end
 
