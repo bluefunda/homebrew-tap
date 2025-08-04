@@ -2,7 +2,7 @@
 cask "abaper" do
   desc "CLI for ABAP Development Tool by BlueFunda, Inc. - Supports Intel and Apple Silicon Macs"
   homepage "https://github.com/bluefunda/abaper"
-  version "0.0.1"
+  version "0.0.2"
 
   livecheck do
     skip "Auto-generated on release."
@@ -12,23 +12,23 @@ cask "abaper" do
 
   on_macos do
     on_intel do
-      url "https://github.com/bluefunda/abaper/releases/download/v0.0.1/abaper_0.0.1_Darwin_x86_64.tar.gz"
-      sha256 "ef4522704b320e87c2cacf9765bc11f9cb00e50fe73b486e28a70c452114374f"
+      url "https://github.com/bluefunda/abaper/releases/download/v0.0.2/abaper_0.0.2_Darwin_x86_64.tar.gz"
+      sha256 "f2ea046c64a5fb0564ededfc6febbf7a592ba316e93dbeb502f40a5b8011c35f"
     end
     on_arm do
-      url "https://github.com/bluefunda/abaper/releases/download/v0.0.1/abaper_0.0.1_Darwin_arm64.tar.gz"
-      sha256 "b339850c0d2af8465266014f08922a8c7dc95bad8a1e8d748a0fcc850ec193f9"
+      url "https://github.com/bluefunda/abaper/releases/download/v0.0.2/abaper_0.0.2_Darwin_arm64.tar.gz"
+      sha256 "5c24df5a280e9311a94969d90e0447d715346784c4db29095acf4b26e51acfdc"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/bluefunda/abaper/releases/download/v0.0.1/abaper_0.0.1_Linux_x86_64.tar.gz"
-      sha256 "d669c015c3feefa044bab831c338a797d0d83b3331eecc9cbde06402f5e0b284"
+      url "https://github.com/bluefunda/abaper/releases/download/v0.0.2/abaper_0.0.2_Linux_x86_64.tar.gz"
+      sha256 "9d711f2b163f07e21d8f0b84f308188707eb289d8b210ad8e2ea17fcba3ec0ec"
     end
     on_arm do
-      url "https://github.com/bluefunda/abaper/releases/download/v0.0.1/abaper_0.0.1_Linux_arm64.tar.gz"
-      sha256 "4f31f2d039b62184ec44cab7b10b5df1a53498c8966ebe155c9eec6747a7b226"
+      url "https://github.com/bluefunda/abaper/releases/download/v0.0.2/abaper_0.0.2_Linux_arm64.tar.gz"
+      sha256 "5fb2cb0f673cb6cf723815477e90d0a4ea23a45a111da4457b40ed0914fb5fd5"
     end
   end
 
