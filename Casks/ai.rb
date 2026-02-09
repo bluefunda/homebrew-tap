@@ -3,7 +3,7 @@ cask "ai" do
   name "ai"
   desc "Cross-platform CLI for the CAI platform via gRPC."
   homepage "https://github.com/bluefunda/cai-cli"
-  version "1.1.0"
+  version "1.1.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -13,23 +13,35 @@ cask "ai" do
 
   on_macos do
     on_intel do
-      url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_darwin_amd64.zip"
-      sha256 "37bcc6a24b9c0113e4aa2bfbe6ca29e13c7a82f30a3a9f816277a8baa1fcfb24"
+      url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_darwin_amd64.zip",
+        header: [
+          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+        ]
+      sha256 "7e41a3e713ae06513ad263fabf61bb1bd07736fef9f02a008459bfc50a05362e"
     end
     on_arm do
-      url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_darwin_arm64.zip"
-      sha256 "4e91bd44346befb60dfd84f7ab9085e77ef0cd2b8352c6578449a7a55e399aec"
+      url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_darwin_arm64.zip",
+        header: [
+          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+        ]
+      sha256 "a17e85eec7833ed7066406e8ae81cd8efb404679471d5918bd71c4f59d477a3d"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_linux_amd64.tar.gz"
-      sha256 "6b44816ec28cee30930e00b2fee731cf4acb781800118100c7eb607b26ad8b19"
+      url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_linux_amd64.tar.gz",
+        header: [
+          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+        ]
+      sha256 "a2927aae0db7c8b8f67318b3a7f772ac530806febbb3cfc5dd5aa3f411de1ba0"
     end
     on_arm do
-      url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_linux_arm64.tar.gz"
-      sha256 "0159723e0c0600ae4d7ccf7730482b71b118fbd25d1ccfaf5ec3d96086a50388"
+      url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_linux_arm64.tar.gz",
+        header: [
+          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+        ]
+      sha256 "8673a6626d7e1e6479da90bbebbda9a02e7deda944c9577785b53b2704507c59"
     end
   end
 
