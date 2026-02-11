@@ -13,16 +13,18 @@ cask "ai" do
 
   on_macos do
     on_intel do
-      url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_darwin_amd64.zip",
+      url "https://api.github.com/repos/bluefunda/cai-cli/releases/assets/352967786",
         header: [
-          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+          "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+          "Accept: application/octet-stream",
         ]
       sha256 "7e41a3e713ae06513ad263fabf61bb1bd07736fef9f02a008459bfc50a05362e"
     end
     on_arm do
-      url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_darwin_arm64.zip",
+      url "https://api.github.com/repos/bluefunda/cai-cli/releases/assets/352967783",
         header: [
-          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+          "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+          "Accept: application/octet-stream",
         ]
       sha256 "a17e85eec7833ed7066406e8ae81cd8efb404679471d5918bd71c4f59d477a3d"
     end
@@ -30,16 +32,18 @@ cask "ai" do
 
   on_linux do
     on_intel do
-      url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_linux_amd64.tar.gz",
+      url "https://api.github.com/repos/bluefunda/cai-cli/releases/assets/352967782",
         header: [
-          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+          "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+          "Accept: application/octet-stream",
         ]
       sha256 "a2927aae0db7c8b8f67318b3a7f772ac530806febbb3cfc5dd5aa3f411de1ba0"
     end
     on_arm do
-      url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_linux_arm64.tar.gz",
+      url "https://api.github.com/repos/bluefunda/cai-cli/releases/assets/352967785",
         header: [
-          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+          "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+          "Accept: application/octet-stream",
         ]
       sha256 "8673a6626d7e1e6479da90bbebbda9a02e7deda944c9577785b53b2704507c59"
     end
