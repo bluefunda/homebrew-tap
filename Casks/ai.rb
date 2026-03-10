@@ -15,14 +15,16 @@ cask "ai" do
     on_intel do
       url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_darwin_amd64.zip",
         header: [
-          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+          "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+          "Accept: application/octet-stream",
         ]
       sha256 "de3b3397db7641d61f222fc4b49d96f391a5d229bd74182bf5f377f3736f62fe"
     end
     on_arm do
       url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_darwin_arm64.zip",
         header: [
-          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+          "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+          "Accept: application/octet-stream",
         ]
       sha256 "271621458e87fc7a1becc4f4b8bf1967ac73d656972bc2be535770626d4d25b0"
     end
@@ -32,14 +34,16 @@ cask "ai" do
     on_intel do
       url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_linux_amd64.tar.gz",
         header: [
-          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+          "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+          "Accept: application/octet-stream",
         ]
       sha256 "c85e929115c8d8dfcd5e5a37b55e168bc6d4368ac30b25ac12e487571040dc40"
     end
     on_arm do
       url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_linux_arm64.tar.gz",
         header: [
-          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+          "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
+          "Accept: application/octet-stream",
         ]
       sha256 "723d2661b7e8dc2ad2dde5051de70ce5d1391e83b49f9dec145164019af3bd7c"
     end
