@@ -3,7 +3,7 @@ cask "ai" do
   name "ai"
   desc "Cross-platform CLI for the CAI platform via gRPC."
   homepage "https://github.com/bluefunda/cai-cli"
-  version "1.2.2"
+  version "1.2.3"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,18 +15,16 @@ cask "ai" do
     on_intel do
       url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_darwin_amd64.zip",
         header: [
-          "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
-          "Accept: application/octet-stream",
+          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
         ]
-      sha256 "ee6abd820e0fd7810cffaea54cb2031f96abafd88d962742f75e4f0215725caf"
+      sha256 "de3b3397db7641d61f222fc4b49d96f391a5d229bd74182bf5f377f3736f62fe"
     end
     on_arm do
       url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_darwin_arm64.zip",
         header: [
-          "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
-          "Accept: application/octet-stream",
+          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
         ]
-      sha256 "43078452e5fe7b5516464ef7dd628604cbbf2b4319ba738ed46705a5412526b3"
+      sha256 "271621458e87fc7a1becc4f4b8bf1967ac73d656972bc2be535770626d4d25b0"
     end
   end
 
@@ -34,18 +32,16 @@ cask "ai" do
     on_intel do
       url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_linux_amd64.tar.gz",
         header: [
-          "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
-          "Accept: application/octet-stream",
+          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
         ]
-      sha256 "bbb652f98cd35963acb78f8558c52aca618cef0e1eedf930c91b789d41287643"
+      sha256 "c85e929115c8d8dfcd5e5a37b55e168bc6d4368ac30b25ac12e487571040dc40"
     end
     on_arm do
       url "https://github.com/bluefunda/cai-cli/releases/download/v#{version}/ai_#{version}_linux_arm64.tar.gz",
         header: [
-          "Authorization: token #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
-          "Accept: application/octet-stream",
+          "Authorization: bearer #{ENV["HOMEBREW_GITHUB_API_TOKEN"]}",
         ]
-      sha256 "35b22d6f23b9abce5b07e8a32eac55157814dbe6abdf7191eb391e913ee8c055"
+      sha256 "723d2661b7e8dc2ad2dde5051de70ce5d1391e83b49f9dec145164019af3bd7c"
     end
   end
 
