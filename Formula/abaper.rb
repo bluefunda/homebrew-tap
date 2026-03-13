@@ -5,13 +5,13 @@
 class Abaper < Formula
   desc "Command line interface for the ABAPer platform"
   homepage "https://abaper.bluefunda.com"
-  version "1.1.0"
+  version "1.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bluefunda/abaper-cli/releases/download/v1.1.0/abaper_1.1.0_darwin_amd64.tar.gz"
-      sha256 "3a2d63ff1688386ff672f8aa45630dfefd70ac04b7cb0631934bf944c46a2db4"
+      url "https://github.com/bluefunda/abaper-cli/releases/download/v1.2.1/abaper_1.2.1_darwin_amd64.tar.gz"
+      sha256 "4be25751ec6a9d86cad9bb9bce092c9ee5791decf8a0f12e24b497a91bf49937"
 
       define_method(:install) do
         bin.install "abaper"
@@ -19,8 +19,8 @@ class Abaper < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bluefunda/abaper-cli/releases/download/v1.1.0/abaper_1.1.0_darwin_arm64.tar.gz"
-      sha256 "281bb2ff2214f0bf2e3341e7a7ccbe9a4344e0cf250e9124c9d13fb119c47ef1"
+      url "https://github.com/bluefunda/abaper-cli/releases/download/v1.2.1/abaper_1.2.1_darwin_arm64.tar.gz"
+      sha256 "6296dc2d098d7e26260325ab9f045d82969855fb3d3cc3b5698e3376c1e9f7a3"
 
       define_method(:install) do
         bin.install "abaper"
@@ -31,16 +31,16 @@ class Abaper < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bluefunda/abaper-cli/releases/download/v1.1.0/abaper_1.1.0_linux_amd64.tar.gz"
-      sha256 "2a70d852a9b3819d6398185ad42d3ea4dd8bbf45a9dc4cc87f887e06e10c77ec"
+      url "https://github.com/bluefunda/abaper-cli/releases/download/v1.2.1/abaper_1.2.1_linux_amd64.tar.gz"
+      sha256 "f540f9078d0db07d34d2dff2628217513ccdd3dbba45e92223b7be246bf055ac"
       define_method(:install) do
         bin.install "abaper"
         man1.install "man/abaper.1"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bluefunda/abaper-cli/releases/download/v1.1.0/abaper_1.1.0_linux_arm64.tar.gz"
-      sha256 "ae01d529aedd6136484c79788772a1ab9f766a356eb1382cc5834a791c3bfdc2"
+      url "https://github.com/bluefunda/abaper-cli/releases/download/v1.2.1/abaper_1.2.1_linux_arm64.tar.gz"
+      sha256 "3d54422cf977a758231f3c20f52ad410444978cab0a5ed99437964c9e49c082e"
       define_method(:install) do
         bin.install "abaper"
         man1.install "man/abaper.1"
