@@ -1,9 +1,9 @@
 # This file is populated automatically by GoReleaser on each release.
 # Install: brew tap bluefunda/tap && brew install --cask req
-cask "req" do
+cask "breq" do
   version :latest
 
-  name "req"
+  name "breq"
   desc "CLI for the BlueRequests change and release management platform"
   homepage "https://github.com/bluefunda/bluerequests"
 
