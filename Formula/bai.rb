@@ -5,20 +5,20 @@
 class Bai < Formula
   desc "CLI for BlueFunda AI — context-aware AI agents for SAP operations"
   homepage "https://github.com/bluefunda/bluefunda-ai"
-  version "1.32.2"
+  version "1.32.3"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bluefunda/bluefunda-ai/releases/download/v1.32.2/bai_1.32.2_darwin_amd64.zip"
-      sha256 "d2a8ba33c912192045ec0e5172a7584e0296f28e83cddc794b113e62bb5b443e"
+      url "https://github.com/bluefunda/bluefunda-ai/releases/download/v1.32.3/bai_1.32.3_darwin_amd64.zip"
+      sha256 "200f0580acce99b799fa6e5a8152e071122d3ef012ca89162a3afdd451d6d7b9"
 
       define_method(:install) do
         bin.install "bai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bluefunda/bluefunda-ai/releases/download/v1.32.2/bai_1.32.2_darwin_arm64.zip"
-      sha256 "923add4e762c446dbf9b942fbb7c0d3760d9ca0e8558d004e03aaf2d09f290da"
+      url "https://github.com/bluefunda/bluefunda-ai/releases/download/v1.32.3/bai_1.32.3_darwin_arm64.zip"
+      sha256 "c7c9f7eb2af89c8f4ee907d41f3f11f4e10b60da00fc10974caf5f40ab77978c"
 
       define_method(:install) do
         bin.install "bai"
@@ -28,15 +28,15 @@ class Bai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bluefunda/bluefunda-ai/releases/download/v1.32.2/bai_1.32.2_linux_amd64.tar.gz"
-      sha256 "e41f4972ca1411a8c4fcad843cc4a6b8ad8331a4588693da2f4625d4e4d9cfc8"
+      url "https://github.com/bluefunda/bluefunda-ai/releases/download/v1.32.3/bai_1.32.3_linux_amd64.tar.gz"
+      sha256 "e804d81ebd832111dd78e0feaa361179273d557ea967e3a6b75232469ece5191"
       define_method(:install) do
         bin.install "bai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bluefunda/bluefunda-ai/releases/download/v1.32.2/bai_1.32.2_linux_arm64.tar.gz"
-      sha256 "47c4a4c46325571ecbb384c878c9372913a20e59c618a480cbc5e071f88c7d16"
+      url "https://github.com/bluefunda/bluefunda-ai/releases/download/v1.32.3/bai_1.32.3_linux_arm64.tar.gz"
+      sha256 "c6dd62c506558e7b61336ddd1ab4eb3306432af5533ba4c50375c3970fcd374c"
       define_method(:install) do
         bin.install "bai"
       end
