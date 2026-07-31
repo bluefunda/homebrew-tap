@@ -5,21 +5,21 @@
 class ReleaseFoundry < Formula
   desc "GitHub PR-based release notes generator. Collects merged pull requests, filters by label, and renders structured release notes in multiple formats."
   homepage "https://github.com/bluefunda/release-foundry"
-  version "1.7.1"
+  version "1.8.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bluefunda/release-foundry/releases/download/v1.7.1/release-foundry_1.7.1_macOS_amd64.tar.gz"
-      sha256 "41fa42d2f66c3f3d626d7d51244735030bbfcbceda821384badc483b01b9f69d"
+      url "https://github.com/bluefunda/release-foundry/releases/download/v1.8.0/release-foundry_1.8.0_macOS_amd64.tar.gz"
+      sha256 "d3336c8ec1b4a1225e3c0f9ae1449e5af8932686cf5d4f534fbb0c76d0fe577e"
 
       define_method(:install) do
         bin.install "release-foundry"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bluefunda/release-foundry/releases/download/v1.7.1/release-foundry_1.7.1_macOS_arm64.tar.gz"
-      sha256 "756a1b77fb9a066a8d63d37b1b8bba7c82846795a34c8f056822582be4d4a646"
+      url "https://github.com/bluefunda/release-foundry/releases/download/v1.8.0/release-foundry_1.8.0_macOS_arm64.tar.gz"
+      sha256 "9715bb3c6034d8a093b5ccda47c246f5d3157e6e3ac1daae3a49a550f03da93c"
 
       define_method(:install) do
         bin.install "release-foundry"
@@ -29,15 +29,15 @@ class ReleaseFoundry < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bluefunda/release-foundry/releases/download/v1.7.1/release-foundry_1.7.1_linux_amd64.tar.gz"
-      sha256 "4238477909508ab48ee88f5e4b1eec055452098356b39e60ec904dd1cacd5869"
+      url "https://github.com/bluefunda/release-foundry/releases/download/v1.8.0/release-foundry_1.8.0_linux_amd64.tar.gz"
+      sha256 "71398c2a317dfb7c97d5cf6f7344cd2272a337c39f281ed56589f5314fe6d8c6"
       define_method(:install) do
         bin.install "release-foundry"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bluefunda/release-foundry/releases/download/v1.7.1/release-foundry_1.7.1_linux_arm64.tar.gz"
-      sha256 "6f18862a8a986a8c7efaef6a827070dd02723f7abe1211eab7c48d9293fe9748"
+      url "https://github.com/bluefunda/release-foundry/releases/download/v1.8.0/release-foundry_1.8.0_linux_arm64.tar.gz"
+      sha256 "7a9ba7fd0ddb8c279c58956afcaccf9ad04f2d895b5593acb09449ca6457d815"
       define_method(:install) do
         bin.install "release-foundry"
       end
